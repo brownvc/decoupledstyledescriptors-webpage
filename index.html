@@ -1,13 +1,147 @@
----
+<!-- ---
 redirect_from: dsdhandwriting/
 ---
 
-
-<!-- https://youtu.be/ZeOtq0iigss -->
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Decoupled Style Descriptors</title>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ 	<title>Generating Handwriting via Decoupled Style Descriptors (ECCV2020)</title>
+
+ 	<link rel="stylesheet" href="./css/fonts.css" type="text/css" charset="utf-8">
+ 	<link rel="stylesheet" href="./css/normalize.css" type="text/css" charset="utf-8">
+ 	<link rel="stylesheet" href="./css/main.css" type="text/css" charset="utf-8">
+ 	<link rel="stylesheet" href="./css/jht.css" type="text/css" charset="utf-8">
+ 	<link rel="stylesheet" href="./css/slimbox2.css" type="text/css" media="screen" />
+
+   <script type="text/javascript" src="./js/vendor/hiddenemail.js"></script>
+ 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 	<script type="text/javascript" src="./js/vendor/slimbox2.js"></script>
+ 	<script type="text/javascript" src="./js/vendor/glge-compiled-min.js"></script>
+ 	<script type="text/javascript">
+ 		var _gaq = _gaq || [];
+ 		_gaq.push(['_setAccount', 'UA-23628422-1']);
+ 		_gaq.push(['_trackPageview']);
+
+ 		(function() {
+ 			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ 			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ 		})();
+ 	</script>
 </head>
-<body>
-    Temporary webpage for the decoupled style descriptor project.
+
+<body style="max-width: none;">
+	<div class="right-column" style="max-width: 45em; margin: auto;; margin-top: 3em">
+
+		<h1>Generating Handwriting via<br>Decouple Style Descriptors</h1>
+
+		<p class="phototext" style="max-width: 45em;">
+		<a href="http://www.atsunobukotani.com/research/">Atsunobu Kotani</a>,<a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a>,<a href="http://www.jamestompkin.com/">James Tompkin</a>
+    <br>
+		European Conference on Computer Vision (ECCV) 2020
+    <!-- &mdash;<em>Poster Presentation</em> -->
+		</p>
+
+		<!-- <p>
+		<img class="teaser-image" src="teaser_small.png" width="720px">
+		</p> -->
+
+		<h2>Abstract</h2>
+		<p>
+		Representing a space of handwriting stroke styles includes the challenge of representing both the style of each character and the overall style of the human writer. Existing VRNN approaches to representing handwriting often do not distinguish between these different style components, which can reduce model capability. Instead, we introduce the Decoupled Style Descriptor (DSD) model for handwriting, which factors both character- and writer-level styles and allows our model to represent an overall greater space of styles. This approach also increases flexibility: given a few examples, we can generate handwriting in new writer styles, and also now generate handwriting of new characters across writer styles. In experiments, our generated results were preferred over a state of the art baseline method 88% of the time, and in a writer identification task on 20 held-out writers, our DSDs achieved 89.38% accuracy from a single sample word. Overall, DSDs allows us to improve both the quality and flexibility over existing handwriting stroke generation approaches.
+		</p>
+
+		<h2>Video</h2>
+
+		<video class="teaser-image" width="720px" controls poster="files/teaser.png">
+			<source src="files/full_video.mp4" type="video/mp4">
+		</video>
+
+		<p>
+		<a href="files/full_video.mp4">Video (MP4 78.1MB)</a>
+		</p>
+
+		<h2>Files</h2>
+
+		<table style="min-width: 625px; margin: auto; text-align: center;">
+		<tbody>
+		<tr>
+			<td>
+				<a href="files/main_paper.pdf"><img class="teaser-image" width="100px" src="files/main_paper.jpg"></a>
+			</td>
+      <!-- <td>
+				<a href="files/small_main.pdf"><img class="teaser-image" width="100px" src="files/main_paper.jpg"></a>
+			</td> -->
+			<td>
+				<a href="files/small_main.pdf"><img class="teaser-image" width="100px" src="files/supplement.jpg"></a>
+			</td>
+      <td>
+				<img class="teaser-image" width="100px" src="files/white.png">
+			</td>
+      <td>
+				<img class="teaser-image" width="100px" src="files/white.png">
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				Paper<br>
+				<a href="files/main_paper.pdf">PDF 2.8MB</a><br>(<a href="files/small_main.pdf">PDF 761KB</a>)<br>
+			</td>
+      <!-- <td valign="top">
+				Paper (Small)<br>
+				<a href="files/small_main.pdf">PDF 761KB</a><br>
+			</td> -->
+			<td valign="top">
+				Supplemental<br>
+				<a href="files/supplement.pdf">PDF 5.6MB</a><br>
+			</td>
+      <td valign="top">
+				Code<br>
+				<!-- <a href="files/supplemennt.pdf">PDF 5.6MB</a><br> -->
+        Coming soon!
+			</td>
+      <td valign="top">
+				Dataset<br>
+				<!-- <a href="files/supplemennt.pdf">PDF 5.6MB</a><br> -->
+        Coming soon!
+			</td>
+		</tr>
+		</tbody>
+		</table>
+
+		<h2>Bibtex</h2>
+		<PRE style="max-width: 625px; margin: auto;">@inproceedings{Kotani:2020:ECCV,<br>    author = {Atsunobu Kotani and Stefanie Tellex and James Tompkin},<br>    title = {Generating Handwriting via Decoupled Style Descriptors},<br>    booktitle = {European Conference on Computer Vision (ECCV)},<br>    month = August,<br>    year = {2020},<br>}
+		</PRE>
+
+		<h2>Acknowledgements</h2>
+
+		<p>
+    This work was supported by the Sloan Foundation and the National Science Foundation under award number IIS-1652561. We thank Kwang In Kim for fruitful discussions and for being our matrix authority. We thank Naveen Srinivasan and Purvi Goel for the ECCV deadline snack delivery service. Finally, we thank all anonymous writers who contributed to our dataset.
+		</p>
+
+		<table style="min-width: 625px; margin: auto; text-align: center;">
+			<tbody>
+				<tr>
+					<td>
+						<img src="logos/BrownCSLogo.png" width=150px>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- Little bit of space -->
+		<p></p>
+
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-36966695-9', 'auto');
+		ga('send', 'pageview');
+
+		</script>
+	</div>
 </body>
