@@ -4,12 +4,12 @@ body {
 	max-width: 65em;
 	color: #343434; /* Jet Black */
 	background-color: #FEFEFA; /* Baby Powder */
-	
+
 	/* Can't seem to get ligatures to work... */
 	-ms-font-feature-settings:     'smcp' 1, 'liga' 1;  /* IE10 */
     -moz-font-feature-settings:    'smcp' 1, 'liga' 1;  /* Firefox */
     -webkit-font-feature-settings: 'smcp' 1, 'liga' 1;  /* Chrome, Safari, Opera */
-    font-feature-settings:         'smcp' 1, 'liga' 1;  /* Future-proof! */ 
+    font-feature-settings:         'smcp' 1, 'liga' 1;  /* Future-proof! */
 }
 
 p {
@@ -68,7 +68,7 @@ h3 {
 	border-top: 2px solid #ddd;
     padding-top: 0.2em;
 	margin-top: 3em;
-	
+
 	max-width: 15.25em;
 }
 
@@ -129,6 +129,13 @@ td.table-photo {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 td.pub-image {padding-right: 0.5em; padding-top: 1em; padding-bottom: 1em; vertical-align: top}
