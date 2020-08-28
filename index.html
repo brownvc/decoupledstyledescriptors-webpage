@@ -30,7 +30,7 @@
 <body style="max-width: none;">
 	<div class="right-column" style="max-width: 45em; margin: auto;; margin-top: 3em">
 
-		<h1>Generating Handwriting via Decouple Style Descriptors</h1>
+		<h1>Generating Handwriting via Decoupled Style Descriptors</h1>
 
 		<p class="phototext" style="max-width: 45em;">
 		<a href="http://www.atsunobukotani.com/research/">Atsunobu Kotani</a>, <a href="http://cs.brown.edu/people/stellex/">Stefanie Tellex</a>, <a href="http://www.jamestompkin.com/">James Tompkin</a>
@@ -40,7 +40,7 @@
 
 		<img src="files/sample.gif" class="center">
 		<p><em>We synthesize handwriting (bottom) in a target style (top) via learned spaces of style and content,<br>and can exploit any available reference samples (middle) to improve output quality.</em></p>
-    <a href="files/explain.mp4">Method Explanation Video<br>(MP4 5.4MB)</a>
+    	
 		<h2>Abstract</h2>
 		<p>
 		Representing a space of handwriting stroke styles includes the challenge of representing both the style of each character and the overall style of the human writer. Existing VRNN approaches to representing handwriting often do not distinguish between these different style components, which can reduce model capability. Instead, we introduce the Decoupled Style Descriptor (DSD) model for handwriting, which factors both character- and writer-level styles and allows our model to represent an overall greater space of styles. This approach also increases flexibility: given a few examples, we can generate handwriting in new writer styles, and also now generate handwriting of new characters across writer styles. In experiments, our generated results were preferred over a state of the art baseline method 88% of the time, and in a writer identification task on 20 held-out writers, our DSDs achieved 89.38% accuracy from a single sample word. Overall, DSDs allows us to improve both the quality and flexibility over existing handwriting stroke generation approaches.
@@ -66,10 +66,7 @@
 			<td>
 				<a href="files/supplement.pdf"><img class="teaser-image" width="100px" src="files/supplement.jpg"></a>
 			</td>
-      <td>
-				<a href="https://arxiv.org/abs/2008.11354"><img class="teaser-image" width="100px" src="files/main_paper.jpg"></a>
-			</td>
-	    <td>
+	    	<td>
 				<a href="https://github.com/brownvc/decoupled-style-descriptors"><img class="teaser-image" width="100px" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>
 			</td>
       		<td>
@@ -79,17 +76,13 @@
 		<tr>
 			<td valign="top">
 				Paper<br>
-				<a href="files/main_paper.pdf">PDF 2.8MB</a><br>(<a href="files/small_main.pdf">PDF 761KB</a>)
+				<a href="https://arxiv.org/abs/2008.11354">arXiv</a> | <a href="files/main_paper.pdf">PDF 2.8MB</a><br>(<a href="files/small_main.pdf">PDF 761KB</a>)
 			</td>
 			<td valign="top">
 				Supplemental<br>
-				<a href="files/supplement.pdf">PDF 5.6MB</a><br>
+				<a href="files/supplement.pdf">PDF 5.6MB</a><br><a href="files/explain.mp4">MP4 5.4MB (below)</a>
 			</td>
-      <td valign="top">
-				Arxiv<br>
-				<a href="https://arxiv.org/abs/2008.11354">Link</a>
-			</td>
-	    <td valign="top">
+	    	<td valign="top">
 				<a href="https://github.com/brownvc/decoupled-style-descriptors">Code</a>
 			</td>
       		<td valign="top">
@@ -100,8 +93,13 @@
 		</table>
 
 		<h2>Bibtex</h2>
-    <PRE style="max-width: 625px; margin: auto;">@inproceedings{kotani2020dsd,<br>    author = {Kotani, Atsunobu and Tellex, Stefanie and Tompkin, James},<br>    title = {Generating Handwriting via Decoupled Style Descriptors},<br>    booktitle = {European Conference on Computer Vision (ECCV)},<br>    month = {August},<br>    year = {2020},<br>}
+    	<PRE style="max-width: 625px; margin: auto;">@inproceedings{kotani2020dsd,<br>    author = {Kotani, Atsunobu and Tellex, Stefanie and Tompkin, James},<br>    title = {Generating Handwriting via Decoupled Style Descriptors},<br>    booktitle = {European Conference on Computer Vision (ECCV)},<br>    month = {August},<br>    year = {2020},<br>}
 		</PRE>
+
+		<h2>Supplemental Method Explanation Video</h2>
+
+		<video src="files/explain.mp4" class="teaser-image" width="720px" controls></video><br>
+		<a href="files/explain.mp4">(MP4 5.4MB)</a>
 
 		<h2>Acknowledgements</h2>
 
